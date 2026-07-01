@@ -1,0 +1,13 @@
+{
+  "name": "castellan-craft-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for CastellanCraft using Components V2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.2",
+    "discord.js": "^14.19.0"
+  }
+}
