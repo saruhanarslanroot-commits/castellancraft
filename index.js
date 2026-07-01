@@ -37,9 +37,9 @@ if (fs.existsSync(configPath)) {
 }
 
 const config = {
-  token: process.env.DISCORD_TOKEN || fileConfig.token,
-  clientId: process.env.CLIENT_ID || fileConfig.clientId,
-  guildId: process.env.GUILD_ID || fileConfig.guildId
+  token: process.env.DISCORD_TOKEN || process.env.token || process.env.TOKEN || fileConfig.token,
+  clientId: process.env.CLIENT_ID || process.env.clientId || process.env.CLIENTID || fileConfig.clientId,
+  guildId: process.env.GUILD_ID || process.env.guildId || process.env.GUILDID || fileConfig.guildId
 };
 
 if (!config.token || config.token === 'YOUR_DISCORD_BOT_TOKEN') {
